@@ -1,1 +1,2 @@
 # AkvelonInternshipMicroController
+The current state of this particular branch is inoperative and will be merged into the main branch once all necessary modifications have been made. At present, it generates an HTTP server that supplies humidity and temperature data. Regrettably, the data being produced by the server is inaccurate or erroneous. Consequently, efforts are required to rectify and improve the functionality of this branch before merging it into the main codebase.
