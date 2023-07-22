@@ -70,6 +70,7 @@ DHT_Result DHT_loop()
         Serial.print(event.temperature);
         Serial.println(F("°C"));
     }
+    float temperature = event.temperature;
     // Get humidity event and print its value.
     dht.humidity().getEvent(&event);
     if (isnan(event.relative_humidity))
@@ -82,5 +83,5 @@ DHT_Result DHT_loop()
         Serial.print(event.relative_humidity);
         Serial.println(F("%"));
     }
-    return DHT_Result{event.temperature, event.relative_humidity};
+    return DHT_Result{temperature, event.relative_humidity};
 }
