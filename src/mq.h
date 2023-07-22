@@ -20,6 +20,6 @@ struct MQ135_Result
     float resistance;
     float ppm;
     float correctedPPM;
-};;
+};
 
 MQ135_Result MQ135_loop(float temperature, float humidity);
